@@ -2,7 +2,19 @@
 
 ### What is this?
 This is a simple web scraper for collecting product information from osta.ee auction site.
-The scraper scrapes a specified category on Osta.ee and writes found product information in a .json output file.
+The scraper scrapes a specified category on osta.ee and writes found product information in a .json output file in the form of
+```
+{
+    "title": "...",
+    "price": "...",
+    "img_href": "..."
+}
+```
+where:
+* "title" - the title of the listed product
+* "price" - the current price of auction
+* "img_href" - a hyperlink to the product picture featured on the listing.
+
 
 ### Setting things up
 
